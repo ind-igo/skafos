@@ -10,10 +10,7 @@ interface ITreasury {
 
     function withdraw(uint256 _amount, address _token) external;
 
-    function tokenValue(address _token, uint256 _amount)
-        external
-        view
-        returns (uint256 value_);
+    function tokenValue(address _token, uint256 _amount) external view returns (uint256 value_);
 
     function mint(address _recipient, uint256 _amount) external;
 
